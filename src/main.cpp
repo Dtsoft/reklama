@@ -48,7 +48,7 @@ void loop()
         Serial.println("Zakryto");
         break;
     case 49:
-        Serial.println("Otkryt");
+        Serial.println("Otkryto");
         //        sstring("PEMOHT", 0, 3);
         dstring("REMONT", "SMARTFONOV", 5);
         dstring("REMONT", "KOMPW#TEROV", 5);
@@ -144,7 +144,7 @@ void dstring(String one, String two, int blinker)
         delay(100);
         dmd.setBrightness(250);
     }
-    delay(3000);
+    delay(2000);
     for (int i = 0; i < 16; i++)
     {
         dmd.scrollY(-1);
