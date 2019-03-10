@@ -48,7 +48,7 @@ void loop()
         Serial.println("Zakryto");
         break;
     case 49:
-        Serial.println("Otkryto");
+        Serial.println("Otkryt");
         //        sstring("PEMOHT", 0, 3);
         dstring("REMONT", "SMARTFONOV", 5);
         dstring("REMONT", "KOMPW#TEROV", 5);
