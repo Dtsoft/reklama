@@ -144,7 +144,7 @@ void dstring(String one, String two, int blinker)
         delay(100);
         dmd.setBrightness(250);
     }
-    delay(2000);
+    delay(3000);
     for (int i = 0; i < 16; i++)
     {
         dmd.scrollY(-1);
