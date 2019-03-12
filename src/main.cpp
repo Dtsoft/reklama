@@ -63,7 +63,7 @@ void loop()
         //        dstring("USTANOVKA", "VIDEONABL#DENI%", 5);
         dstring("|R KAMERY", "VIDEOREGISTRATORY", 5);
         dstring("POKLE^KA", "ZAqITNYH PLENOK", 5);
-        // dstring("PROVERKA", "RABOTY TABLO",5);
+        dstring("RASPRODAJA _EHLOV", "PO 30-50 GRN.", 5);
         sstring("A P P L E", 0, 5);
         sstring("iPhone X", 0, 5);
         fade(1);
@@ -96,12 +96,12 @@ void sstring(String one, boolean rus, int blinker)
     displayDMDstring(one, 1);
     for (int t = 1; t <= blinker; t++)
     {
-        for (int i = 250; i >= 0; i--)
+        for (int i = 200; i >= 0; i--)
         {
             dmd.setBrightness(i);
             delay(1);
         }
-        for (int i = 0; i <= 250; i++)
+        for (int i = 0; i <= 200; i++)
         {
             dmd.setBrightness(i);
             delay(1);
@@ -113,7 +113,7 @@ void fade(boolean inout)
 {
     if (inout)
     {
-        for (int i = 250; i >= 0; i--)
+        for (int i = 200; i >= 0; i--)
         {
             dmd.setBrightness(i);
             delay(3);
@@ -121,7 +121,7 @@ void fade(boolean inout)
     }
     else
     {
-        for (int i = 0; i <= 250; i++)
+        for (int i = 0; i <= 200; i++)
         {
             dmd.setBrightness(i);
             delay(1);
@@ -142,7 +142,7 @@ void dstring(String one, String two, int blinker)
         delay(100);
         dmd.setBrightness(35);
         delay(100);
-        dmd.setBrightness(250);
+        dmd.setBrightness(200);
     }
     delay(2000);
     for (int i = 0; i < 16; i++)
